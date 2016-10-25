@@ -54,7 +54,8 @@
     "test": "./node_modules/.bin/gulp once",
     "watch": "./node_modules/.bin/gulp",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
-    "lint": "gulp eslint"
+    "lint": "gulp eslint",
+    "postinstall": "gulp transpile"
   },
   "pre-commit": [
     "precommit-msg",
